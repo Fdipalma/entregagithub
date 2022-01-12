@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+/* HEADER */
+header {
+    background-color: #08070e;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: static;
+}
+
+.botonera {
+    margin-right: 20px;
+}
+
+.botonera ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.botonera ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #d4c1d1;
+}
+
+.logo {
+    padding-bottom: 5px;
+    padding-top: 5px
+}
+
+.contactoPag{
+    margin-top: 50px;
+}
+
+/* MAIN */
+
+.mainIndex{
+    display: flex;
+    width: 100%;
+    height: 15rem;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(187, 168, 184);
+    color: rgb(44, 9, 44);
+    font-size: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+.mainIndexP{
+    display: flex;
+    width: 100%;
+    height: 14rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(50, 39, 63);
+    color: rgb(156, 134, 156);
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+/* ANIMACIONES HOVER/FOCUS*/
+
+a {
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+
+a:hover,
+a:focus {
+    background-size: 100% 2px;
+}
+
+
+
+/* SECCION SERVICIOS */
+
+.serviciosMain{
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    color: rgb(238, 222, 237);
+    background-color: #3d1e31;
+    text-transform: uppercase;
+
+}
+
+.serviciosP{
+    padding-top: 10px;
+    padding-left: 10px;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    font-weight: bold;
+    
+
+}
+
+.contenedorServicios{
+    width: 100%;
+    color: rgb(250, 201, 247);
+    background-color: #1a0f15;
+    height: 26rem;
+}
+
+
+.imagenEncabezado {
+    width: 100%;
+}
+
+
+
+/*SECCION GALERIA */
+.galeriaPag{
+    text-align: center;
+    margin: 50px;
+    padding: 30px;
+    border: solid 1px #99A799;
+    border-radius: 4px;
+
+}
+
+.imagenGaleria {
+    width: 250px;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    
+}
+
+.imagenGaleria:hover {
+    filter: grayscale(100%);
+    z-index: 5;
+}
+
+.gridPadre {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-template-areas:
+        "imagenUno imagenDos imagenTres"
+        "imagenCuatro imagenCinco imagenSeis"
+    ;
+
+}
+
+.imagenUno {
+    grid-area: imagenUno;
+}
+
+.imagenDos {
+    grid-area: imagenDos;
+}
+
+.imagenTres {
+    grid-area: imagenTres;
+}
+
+.imagenCuatro {
+    grid-area: imagenCuatro;
+}
+
+.imagenCinco {
+    grid-area: imagenCinco;
+}
+
+.imagenSeis {
+    grid-area: imagenSeis;
+}
+
+.contenedor {
+    text-align: center;
+    margin: 50px;
+    padding: 30px;
+    border: solid 1px #99A799;
+    border-radius: 4px;
+}
+
+.contenedorPagUno{
+    margin-top: 50px;
+    text-align: center;
+    margin: 50px;
+    padding: 30px;
+    border: solid 1px #99A799;
+    border-radius: 4px;
+}
+
+.contenedorCon{
+    margin-top: 50px;
+    text-align: center;
+    margin: 50px;
+    padding: 30px;
+    border: solid 1px #99A799;
+    border-radius: 4px;
+
+}
+
+
+.contenedorPag h2 {
+    padding-top: 2rem;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(238, 222, 237);
+    text-transform: uppercase;
+
+}
+
+.contenedorPag{
+    font-weight: bold;
+    color: rgb(238, 222, 237);
+    background-color: #3d1e31;
+    border: solid 1.5px cornflowerblue;
+
+}
+
+.contenedorP {
+    font-size: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+/* SECCION CONTACTO */
+
+.campo {
+    display: block;
+    width: 50%;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+.boton {
+    color: rgb(238, 222, 237);
+    background-color: #3d1e31;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/* SECCION FOOTER */
+
+footer {
+    display: flex;
+    background-color: #FEF5ED;
+    width: 100%;
+    height: 5rem;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer ul li {
+    list-style-type: none;
+}
+
+footer ul li a {
+    margin-left: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+}
+
+footer h4 {
+    color: #99A799;
+}
+
+/* BOTON DE WHATSAPP */
+
+.botonWhatsApp img {
+    width: 50px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+}
+
+
+/*VISTA MOVIL */
+
+@media only screen and (max-width:599px) {
+    
+    .gridPadre {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-areas:
+            "imagenUno"
+            "imagenDos"
+            "imagenTres"
+            "imagenCuatro"
+            "imagenCinco"
+            "imagenSeis"
+        ;
+
+    }
+
+
+    .imagenUno {
+        grid-area: imagenUno;
+    }
+
+    .imagenDos {
+        grid-area: imagenDos;
+    }
+
+    .imagenTres {
+        grid-area: imagenTres;
+    }
+
+    .imagenCuatro {
+        grid-area: imagenCuatro;
+    }
+
+    .imagenCinco {
+        grid-area: imagenCinco;
+    }
+
+    .imagenSeis {
+        grid-area: imagenSeis;
+    }
+
+}
+
+/* VISTA TABLET */
+@media only screen and (min-width:600px) and (max-width:1023px) {
+    
+    /* .imagenEncabezado {
+        display: none;
+    } */
+
+    .gridPadre {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas:
+            "imagenUno imagenDos"
+            "imagenTres imagenCuatro"
+            "imagenCinco imagenSeis"
+        ;
+    }
+
+    .imagenUno {
+        grid-area: imagenUno;
+    }
+
+    .imagenDos {
+        grid-area: imagenDos;
+    }
+
+    .imagenTres {
+        grid-area: imagenTres;
+    }
+
+    .imagenCuatro {
+        grid-area: imagenCuatro;
+    }
+
+    .imagenCinco {
+        grid-area: imagenCinco;
+    }
+
+    .imagenSeis {
+        grid-area: imagenSeis;
+    }
+
+
+
+
+}
