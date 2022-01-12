@@ -311,6 +311,19 @@ footer h4 {
 /*VISTA MOVIL */
 
 @media only screen and (max-width:599px) {
+
+    .mainIndex, .mainIndexP {
+        max-width: 599px;
+        max-height: 8rem;
+        font-size: 15px;
+    }
+    .footerUno, .footerDos {
+        max-width: 599px;
+        max-height: auto;
+        font-size: 10px;
+        
+    }
+    
     
     .gridPadre {
         display: grid;
@@ -357,9 +370,18 @@ footer h4 {
 /* VISTA TABLET */
 @media only screen and (min-width:600px) and (max-width:1023px) {
     
-    /* .imagenEncabezado {
-        display: none;
-    } */
+    .mainIndex, .mainIndexP {
+        max-width: 1023px;
+        max-height: 8rem;
+        font-size: 18px;
+        font: bolder;
+    }
+    .footerUno, .footerDos {
+        max-width: 1023px;
+        max-height: auto;
+        font-size: 15px;
+        
+    }
 
     .gridPadre {
         display: grid;
