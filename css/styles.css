@@ -310,115 +310,24 @@ footer h4 {
 
 /*VISTA MOVIL */
 
-@media only screen and (min-width:300px) and (max-width:600px) {
 
-    .mainIndex, .mainIndexP {
-        max-width: 600px;
-        max-height: auto;
-        font-size: medium;
-    }
-    .footerUno, .footerDos {
-        max-width: 600px;
-        max-height: auto;
-        font-size: medium;
-        
-    }
+@media (min-width: 576px) {
+    .mainIndex, .mainIndexP, .botonera, .footerUno, .footerDos {
+      max-width: 540px;      }
+}
     
-    
-    .gridPadre {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto auto auto;
-        grid-template-areas:
-            "imagenUno"
-            "imagenDos"
-            "imagenTres"
-            "imagenCuatro"
-            "imagenCinco"
-            "imagenSeis"
-        ;
 
-    }
-
-
-    .imagenUno {
-        grid-area: imagenUno;
-    }
-
-    .imagenDos {
-        grid-area: imagenDos;
-    }
-
-    .imagenTres {
-        grid-area: imagenTres;
-    }
-
-    .imagenCuatro {
-        grid-area: imagenCuatro;
-    }
-
-    .imagenCinco {
-        grid-area: imagenCinco;
-    }
-
-    .imagenSeis {
-        grid-area: imagenSeis;
-    }
-
+  @media (min-width: 768px) {
+    .mainIndex, .mainIndexP, .botonera, .footerUno, .footerDos {
+        max-width: 720px;    } 
+}
+  
+  @media (min-width: 1200px) {
+    .mainIndex, .mainIndexP, .botonera, .footerUno, .footerDos {
+      max-width: 1140px;    }
 }
 
-/* VISTA TABLET */
-@media only screen and (min-width:601px) and (max-width:1023px) {
-    
-    .mainIndex, .mainIndexP {
-        max-width: 1023px;
-        max-height: auto;
-        font-size: 18px;
-        font: bolder;
-    }
-    .footerUno, .footerDos {
-        max-width: 1023px;
-        max-height: auto;
-        font-size: 15px;
-        
-    }
-
-    .gridPadre {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto auto auto auto;
-        grid-template-areas:
-            "imagenUno imagenDos"
-            "imagenTres imagenCuatro"
-            "imagenCinco imagenSeis"
-        ;
-    }
-
-    .imagenUno {
-        grid-area: imagenUno;
-    }
-
-    .imagenDos {
-        grid-area: imagenDos;
-    }
-
-    .imagenTres {
-        grid-area: imagenTres;
-    }
-
-    .imagenCuatro {
-        grid-area: imagenCuatro;
-    }
-
-    .imagenCinco {
-        grid-area: imagenCinco;
-    }
-
-    .imagenSeis {
-        grid-area: imagenSeis;
-    }
-
-
-
-
-}
+  @media (min-width: 1400px) {
+    .mainIndex, .mainIndexP, .botonera, .footerUno, .footerDos {
+      max-width: 1320px;    }
+  }
