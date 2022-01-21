@@ -279,8 +279,6 @@ footer {
     background-color: #FEF5ED;
     width: 100%;
     height: 5rem;
-    justify-content: space-evenly;
-    align-items: center;
 }
 
 footer ul li {
@@ -307,27 +305,46 @@ footer h4 {
     right: 10px;
 }
 
+.footerUno {
+    display: flex;
+    align-items: left;
+    align-content: left;
+    padding: 0.5rem;
+}
+
+.footerDos {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin-left: 3rem;
+    font-weight: bolder;
+    padding: 0.5rem;
+}
 
 /*VISTA MOVIL */
 
 
-@media (min-width: 576px) {
-    .mainIndex, .mainIndexP, .botonera, .footerUno, .footerDos {
-      max-width: 540px;      }
+@media (min-width: 576px) and (max-width: 767px) {
+    .mainIndex, .mainIndexP, .botonera, .footer, .footerUno, .footerDos {
+
 }
     
 
-  @media (min-width: 768px) {
-    .mainIndex, .mainIndexP, .botonera, .footerUno, .footerDos {
-        max-width: 720px;    } 
+  @media (min-width: 768px) and (max-width: 1199px) {
+    .mainIndex, .mainIndexP, .botonera, .footer, .footerUno, .footerDos {
+
 }
   
   @media (min-width: 1200px) {
-    .mainIndex, .mainIndexP, .botonera, .footerUno, .footerDos {
-      max-width: 1140px;    }
+    .mainIndex, .mainIndexP, .botonera, .footer, .footerUno, .footerDos {
+        margin-right: 20px;
+        font-size: medium;
+        height: 5rem;
+        padding: 0%;
+        margin-bottom: 0%;
+        margin-top: 0%; 
+                }
 }
 
-  @media (min-width: 1400px) {
-    .mainIndex, .mainIndexP, .botonera, .footerUno, .footerDos {
-      max-width: 1320px;    }
-  }
+
+
