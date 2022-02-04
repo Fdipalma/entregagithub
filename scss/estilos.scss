@@ -144,6 +144,14 @@ a:focus {
 
 
 /*SECCION GALERIA */
+
+.galeriaContenedor{
+    padding: 3rem;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
 .galeriaPag{
     text-align: center;
     margin: 50px;
