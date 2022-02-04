@@ -1,0 +1,36 @@
+/* LOS PIXIN PUEDEN SER CON PARAMETROS O SIN PARAMETROS*/ 
+
+/* MIXIN SIN PARAMETROS */
+
+@mixin parrafos {
+    display: flex;
+    width: 100%;
+    height: 14rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(50, 39, 63);
+    color: rgb(156, 134, 156);
+    font-size: 20px;
+    font-weight: bold;    
+}
+
+.parrafosConEstilo {
+    @include parrafos;
+}
+
+/* MIXIN CON PARAMETROS */
+
+@mixin parrafoConParametros($display,$color,$size,$alineacion,$marginleft,$padding,$backgroundc,$alignitems) {
+    display: $display;
+    color: $color;
+    font-size: $size;
+    text-align: $alineacion;
+    margin-left: $marginleft;
+    padding: $padding;
+    background-color: $backgroundc;
+}
+
+.parrafosC{
+    @include parrafoConParametros(flex,white,1rem,center,7rem,0.5rem,#32273f,center)
+}

@@ -1,0 +1,25 @@
+$vista: samuel;
+
+@if ($vista == escritorio) {
+    body {
+        background-color: green;
+    }
+
+}@else if ($vista == movil) {
+    body {
+        background-color: rgb(228, 60, 88);
+    }
+}@else {
+    body{
+        background-color: indigo;
+    }
+}
+
+body {
+    @if ($vista == escritorio){
+        background-color: red;
+        }@else if ($vista == movil){
+            background-color: blue;
+        }
+
+    }
