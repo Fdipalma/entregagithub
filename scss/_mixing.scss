@@ -5,13 +5,13 @@
 @mixin parrafos {
     display: flex;
     width: 100%;
-    height: 14rem;
+    height: 10rem;
     justify-content: center;
     align-items: center;
     text-align: center;
     background-color: rgb(50, 39, 63);
     color: rgb(156, 134, 156);
-    font-size: 20px;
+    font-size: 10px;
     font-weight: bold;    
 }
 
@@ -21,16 +21,16 @@
 
 /* MIXIN CON PARAMETROS */
 
-@mixin parrafoConParametros($display,$color,$size,$alineacion,$marginleft,$padding,$backgroundc,$alignitems) {
+@mixin parrafoConParametros($display,$color,$size,$alineacion,$padding,$backgroundc,$justifycon) {
     display: $display;
     color: $color;
     font-size: $size;
     text-align: $alineacion;
-    margin-left: $marginleft;
     padding: $padding;
     background-color: $backgroundc;
+    justify-content: $justifycon;
 }
 
 .parrafosC{
-    @include parrafoConParametros(flex,white,1rem,center,7rem,0.5rem,#32273f,center)
+    @include parrafoConParametros(flex,white,1rem,center,0.5rem,#32273f,center)
 }
