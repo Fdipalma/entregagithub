@@ -105,6 +105,113 @@ body {
   background-color: #e0dae4;
 }
 
+/* bucles */
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 3.5rem;
+}
+
+h4 {
+  font-size: 4.5rem;
+}
+
+h5 {
+  font-size: 5.5rem;
+}
+
+h6 {
+  font-size: 6.5rem;
+}
+
+/* EACH */
+.pink {
+  color: pink;
+}
+
+.green {
+  color: green;
+}
+
+.black {
+  color: black;
+}
+
+/*maps*/
+.facebook--link {
+  color: red;
+}
+
+.instagram--link {
+  color: blue;
+}
+
+.twitter--link {
+  color: yellow;
+}
+
+/* MAP - GET */
+.pepeLePu {
+  background-color: red;
+  font-size: 30px;
+  height: 150px;
+  width: 150px;
+}
+
+/* EXTEND */
+.primerEstilo, .segundoEstilo, .segundoEstilo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: right;
+}
+
+.segundoEstilo {
+  font-size: 35px;
+}
+
+/* variables carrousel */
+/* LOS PIXIN PUEDEN SER CON PARAMETROS O SIN PARAMETROS*/
+/* MIXIN SIN PARAMETROS */
+.parrafosConEstilo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 14rem;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  background-color: #32273f;
+  color: #9c869c;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+/* MIXIN CON PARAMETROS */
+.parrafosC {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #caa6c2;
+  font-size: 1.5rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: normal;
+  text-align: center;
+  padding: 0.5rem;
+  background-color: #32273f;
+  margin-bottom: 5rem;
+}
+
+body {
+  background-color: #e0dae4;
+}
+
 nav ul {
   margin: 0;
   padding: 0;
@@ -126,20 +233,22 @@ body {
 }
 
 /* HEADER */
-.headerMain {
-  background-color: #0f0211;
+header {
+  background-color: #401447;
   width: 100%;
-  height: 1rem;
+  height: 4.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: static;
+  padding-top: 5px;
+  padding-left: 30%;
 }
 
 .botonera ul li {
@@ -158,11 +267,6 @@ body {
   margin-top: 50px;
 }
 
-.logoAjax {
-  width: 40px;
-  height: 40px;
-}
-
 /* MAIN */
 .mainIndex {
   display: -webkit-box;
@@ -171,11 +275,11 @@ body {
   width: 100%;
   height: 15rem;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   background-color: #bba8b8;
   color: #2c092c;
@@ -191,11 +295,11 @@ body {
   width: 100%;
   height: 14rem;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
   background-color: #32273f;
   color: #9c869c;
@@ -251,13 +355,13 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
 }
 
 .titulosPag {
@@ -302,8 +406,8 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   text-decoration: none;
   font-weight: bold;
   color: #eedeed;
@@ -324,15 +428,20 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
 }
 
 .videoNosotros {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
@@ -359,7 +468,6 @@ footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: static;
   background-color: #FEF5ED;
   height: 5.2rem;
 }
@@ -382,8 +490,8 @@ footer ul li a {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
   font-weight: normal;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -393,10 +501,10 @@ footer ul li a {
 
 .footerUno {
   -webkit-box-align: left;
-      -ms-flex-align: left;
-          align-items: left;
+  -ms-flex-align: left;
+  align-items: left;
   -ms-flex-line-pack: left;
-      align-content: left;
+  align-content: left;
   padding: 5px;
   color: darkslategray;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
