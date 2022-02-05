@@ -136,6 +136,10 @@ a:focus {
     border: #eb58a9;
     border-radius: 0.5rem;
     border-style: ridge;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
 }
 
 .titulosPag{
@@ -144,7 +148,8 @@ a:focus {
     text-align: center;
     color: #401447;
     margin-bottom: 1rem;
-    margin-top: 1rem;    
+    margin-top: 1rem;
+    font-size: 2rem;    
 }
 
 .contenedor {
@@ -205,6 +210,13 @@ a:focus {
     font-weight: bold;
 }
 
+.videoNosotros{
+    display: block;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+
+}
+
 
 /* SECCION CONTACTO */
 
@@ -247,22 +259,23 @@ footer ul li a {
 
 .parrafosD{
     background-color: #FEF5ED;
-    margin-left: 2rem;
     display: flex;
     align-items: center;
-    font-weight: lighter;
-
+    text-align: center;
+    font-weight: normal;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    color: rgb(63, 18, 33);
 }
 
 .footerUno {
-    display: flex;
     align-items: left;
     align-content: left;
     padding: 5px;
     color:darkslategray;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin-left: 15px;
     text-transform: none;
     font-weight: normal;
+    margin-right: 2rem;
 }
 
