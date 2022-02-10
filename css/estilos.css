@@ -328,10 +328,12 @@ a:focus {
 .serviciosLista {
   background-color: #32273f;
   color: #e0dde0;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
   list-style: none;
   margin-bottom: 2rem;
+  margin-top: 2rem;
 }
 
 .serviciosP {
@@ -348,28 +350,35 @@ a:focus {
 
 /*SECCION GALERIA */
 .galeriaImg {
-  border: #eb58a9;
-  border-radius: 0.5rem;
-  border-style: ridge;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-line-pack: center;
-  align-content: center;
+      align-content: center;
+  padding: 2rem;
+}
+
+.subImagen {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  color: #401447;
+  font-size: 1rem;
 }
 
 .titulosPag {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: normal;
   text-align: center;
-  color: #401447;
-  margin-bottom: 1rem;
+  color: #49172a;
   margin-top: 1rem;
+  padding-top: 1rem;
   font-size: 2rem;
 }
 
