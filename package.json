@@ -21,7 +21,8 @@
   "keywords": [],
   "devDependencies": {
     "node-sass": "^7.0.1",
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "optimize-css-assets-webpack-plugin": "^6.0.1"
   },
   "dependencies": {
     "bootstrap": "^5.1.3",
