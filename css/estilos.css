@@ -157,7 +157,7 @@ h6 {
 }
 
 /* MAP - GET */
-.pepeLePu {
+.mapGetestilo {
   background-color: red;
   font-size: 30px;
   height: 150px;
@@ -212,10 +212,6 @@ h6 {
   margin-bottom: 5rem;
 }
 
-body {
-  background-color: #e0dae4;
-}
-
 nav ul {
   margin: 0;
   padding: 0;
@@ -245,22 +241,28 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  position: static;
-  padding-left: 30%;
+  padding-left: 1rem;
 }
 
 .botonera {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #401447 !important;
+  text-align: left;
   text-decoration: none;
   text-transform: none;
   font-weight: normal;
-  color: #b691bb !important;
+  color: #b691bb;
   font-family: sans-serif;
+  font-weight: bold;
+}
+
+.botonMenu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #401447;
   font-weight: bold;
 }
 
@@ -377,7 +379,6 @@ a:focus {
   font-weight: normal;
   text-align: center;
   color: #49172a;
-  margin-top: 1rem;
   padding-top: 1rem;
   font-size: 2rem;
 }
